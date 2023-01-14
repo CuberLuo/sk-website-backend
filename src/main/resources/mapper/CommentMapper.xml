@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//MyBatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.sk.webbackend.mapper.CommentMapper">
+
+    <select id="selectMapByIp" resultType="map">
+        select * from comments where ip=#{ip} order by commentDate desc limit 1;
+    </select>
+</mapper>

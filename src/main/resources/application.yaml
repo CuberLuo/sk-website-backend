@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+#        local
+#    password: mpw:Qc30dZ/zxpmoyEhg3APaLw==
+#    url: jdbc:mysql://127.0.0.1:3306/sk-website?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+
+#        cloud
+    password: mpw:srA0Q99pI4bsdu/8Nq5nhflwPQ4qWMfspDGl6bWJ0Wo=
+    url: jdbc:mysql://1.15.134.164:3306/sk-website?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 0
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false # 禁止大写变小写时自动添加下划线
+
+server:
+  port: 88
